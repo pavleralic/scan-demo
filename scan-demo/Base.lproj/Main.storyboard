@@ -109,8 +109,16 @@
                                     <constraint firstAttribute="bottom" secondItem="J90-gD-OVI" secondAttribute="bottom" id="zi3-K4-uQP"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIg-P4-naq">
+                                <rect key="frame" x="315" y="70.666666666666671" width="68" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Share"/>
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="Phd-yy-NYF" eventType="touchUpInside" id="9Gk-ey-5M1"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Taken scan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzX-WO-j5Z">
-                                <rect key="frame" x="20" y="79" width="353" height="18"/>
+                                <rect key="frame" x="20" y="79" width="79.666666666666671" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -121,9 +129,10 @@
                         <constraints>
                             <constraint firstItem="O0y-9C-4Na" firstAttribute="bottom" secondItem="OPf-Dm-MP8" secondAttribute="bottom" constant="20" id="664-op-hbk"/>
                             <constraint firstItem="O0y-9C-4Na" firstAttribute="trailing" secondItem="OPf-Dm-MP8" secondAttribute="trailing" constant="20" id="837-xE-6zb"/>
-                            <constraint firstItem="O0y-9C-4Na" firstAttribute="trailing" secondItem="mzX-WO-j5Z" secondAttribute="trailing" constant="20" id="P5V-eL-4vM"/>
                             <constraint firstItem="mzX-WO-j5Z" firstAttribute="leading" secondItem="O0y-9C-4Na" secondAttribute="leading" constant="20" id="QVP-e1-Yid"/>
                             <constraint firstItem="OPf-Dm-MP8" firstAttribute="top" secondItem="mzX-WO-j5Z" secondAttribute="bottom" constant="20" id="Uw7-20-Z7e"/>
+                            <constraint firstItem="JIg-P4-naq" firstAttribute="centerY" secondItem="mzX-WO-j5Z" secondAttribute="centerY" id="XLF-13-mWF"/>
+                            <constraint firstItem="O0y-9C-4Na" firstAttribute="trailing" secondItem="JIg-P4-naq" secondAttribute="trailing" constant="10" id="dSX-eO-gl2"/>
                             <constraint firstItem="OPf-Dm-MP8" firstAttribute="leading" secondItem="O0y-9C-4Na" secondAttribute="leading" constant="20" id="mek-AA-Bq4"/>
                             <constraint firstItem="mzX-WO-j5Z" firstAttribute="top" secondItem="O0y-9C-4Na" secondAttribute="top" constant="20" id="pqj-GU-LCY"/>
                         </constraints>
